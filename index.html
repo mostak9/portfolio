@@ -24,6 +24,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        primary: '#695aa6',
+                        'nav-color': '#6c757d',
                     }
                 }
             }
@@ -41,8 +43,76 @@
     </style>
 </head>
 
-<body>
+<body class="font-open-sans">
+    <header class="h-screen bg-cover bg-center bg-blend-overlay"
+        style="background-image: url('./images/header.jpg'),  linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);">
+        <!-- navigation bar -->
+        <nav class="container mx-auto">
+            <div class="navbar">
+                <div class="navbar-start lg:hidden">
+                    <a class="btn btn-ghost normal-case text-xl font-extrabold text-white font-baloo">Mostak</a>
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-bold">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Testimonial</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Content</a></li>
+                            <li><a class="btn bg-primary text-[#fff] pt-3">Components</a></li>
 
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar-start hidden lg:flex">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Testimonial</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Content</a></li>
+                            <li><a class="btn bg-primary text-[#fff] pt-3">Components</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-4xl font-extrabold text-white font-baloo">Mostak Ahmed</a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-nav-color font-bold text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Testimonial</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Content</a></li>
+                        <!-- <li><a class="btn bg-primary text-[#fff] pt-4">Components</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
