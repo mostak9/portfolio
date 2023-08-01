@@ -40,13 +40,19 @@
         .font-open-sans {
             font-family: 'Open Sans', sans-serif;
         }
-
         .card:hover .card-body p {
             display: block;
+            
         }
 
         .card:hover .card img {
             width: 25px
+        }
+        .hero:hover .hero-overlay {
+            display: block;
+        }
+        .hero:hover .hero-content {
+            display: block;
         }
     </style>
 </head>
@@ -169,7 +175,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title font-extrabold text-xl text-primary font-baloo"">Sapiente</h2>
-                            <p class=" hidden">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                            <p class="hidden">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                                 molestias dolorem iste quod.</p>
                         </div>
                     </div>
@@ -210,6 +216,48 @@
                             <h2 class="card-title font-extrabold text-xl text-primary font-baloo"">Iusto</h2>
                             <p class=" hidden">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                                 molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section class="container mx-auto my-20">
+            <div class="text-center">
+                <p class="text-xl opacity-60">What I Did ?</p>
+                <h1 class="text-5xl font-extrabold text-5xl text-primary font-baloo">Portfolio</h1>
+
+                <!-- card container -->
+                <div class="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 px-5 md:px-0">
+                    <!-- card 1 -->
+                    <div class="hero min-h-[290px] rounded-md" style="background-image: url('./images/folio-1.jpg');">
+                        <div class="hero-overlay hidden bg-[#f0eff6] bg-opacity-80"></div>
+                        <div class="hero-content hidden text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 font-extrabold text-3xl text-primary font-baloo">Web Designing</h1>
+                            <p class="mb-5 text-black">Catagory: Web Templates</p>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="hero min-h-[290px] rounded-md" style="background-image: url('./images/folio-2.jpg');">
+                        <div class="hero-overlay hidden bg-[#f0eff6] bg-opacity-80"></div>
+                        <div class="hero-content hidden text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 font-extrabold text-3xl text-primary font-baloo">Web Designing</h1>
+                            <p class="mb-5 text-black">Catagory: Web Templates</p>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="hero min-h-[290px] rounded-md" style="background-image: url('./images/folio-3.jpg');">
+                        <div class="hero-overlay hidden bg-[#f0eff6] bg-opacity-80"></div>
+                        <div class="hero-content hidden text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 font-extrabold text-3xl text-primary font-baloo">Web Designing</h1>
+                            <p class="mb-5 text-black">Catagory: Web Templates</p>
+                          </div>
                         </div>
                     </div>
                 </div>
